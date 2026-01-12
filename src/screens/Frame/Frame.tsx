@@ -2,6 +2,7 @@ import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
+import { SignInButton } from "../../components/SignInButton";
 
 const bulletPoints = [
   {
@@ -98,9 +99,7 @@ export const Frame = (): JSX.Element => {
             </div>
 
             <div className="space-y-3">
-              <Button className="w-full bg-[#004f9f] hover:bg-[#003d7a] text-white [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[13px]">
-                Войти
-              </Button>
+              <SignInButton />
 
               <div className="text-center [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#4a4a49] text-[13px]">
                 или
