@@ -58,62 +58,64 @@ export const Frame = (): JSX.Element => {
           </div>
         </section>
 
-        <Card className="w-full max-w-[452px] bg-white rounded-[15px] shadow-lg">
-          <CardContent className="p-8 space-y-6">
-            <div className="flex justify-center">
-              <img className="h-[41px]" alt="TMX Logo" src="/group-4.png" />
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="[font-family:'Brutal_Type-Medium',Helvetica] font-medium text-black text-xl leading-normal">
-                Для начала работы на портале
-                <br />
-                введите логин и пароль
-              </h3>
-            </div>
-
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <Label
-                  htmlFor="login"
-                  className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#757576] text-[13px]"
-                >
-                  Логин
-                </Label>
-                <Input id="login" type="text" className="w-full" />
+        <form action="/home" id="login_form" method="post">
+          <Card className="w-full max-w-[452px] bg-white rounded-[15px] shadow-lg">
+            <CardContent className="p-8 space-y-6">
+              <div className="flex justify-center">
+                <img className="h-[41px]" alt="TMX Logo" src="/group-4.png" />
               </div>
 
               <div className="space-y-2">
-                <Label
-                  htmlFor="password"
-                  className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#757576] text-[13px]"
+                <h3 className="[font-family:'Brutal_Type-Medium',Helvetica] font-medium text-black text-xl leading-normal">
+                  Для начала работы на портале
+                  <br />
+                  введите логин и пароль
+                </h3>
+              </div>
+
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="login"
+                    className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#757576] text-[13px]"
+                  >
+                    Логин
+                  </Label>
+                  <Input id="login" type="text" name="login" className="w-full" />
+                </div>
+
+                <div className="space-y-2">
+                  <Label
+                    htmlFor="password"
+                    className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#757576] text-[13px]"
+                  >
+                    Пароль
+                  </Label>
+                  <Input id="password" type="password" name="password" className="w-full" />
+                </div>
+
+                <button className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#004f9f] text-xs text-right w-full hover:underline">
+                  Забыли или не знаете пароль?
+                </button>
+              </div>
+
+              <div className="space-y-3">
+                <SignInButton />
+
+                <div className="text-center [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#4a4a49] text-[13px]">
+                  или
+                </div>
+
+                <Button
+                  variant="outline"
+                  className="w-full border-[#004f9f] text-[#004f9f] hover:bg-[#004f9f] hover:text-white [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[13px]"
                 >
-                  Пароль
-                </Label>
-                <Input id="password" type="password" className="w-full" />
+                  Зарегистрироваться
+                </Button>
               </div>
-
-              <button className="[font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#004f9f] text-xs text-right w-full hover:underline">
-                Забыли или не знаете пароль?
-              </button>
-            </div>
-
-            <div className="space-y-3">
-              <SignInButton />
-
-              <div className="text-center [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[#4a4a49] text-[13px]">
-                или
-              </div>
-
-              <Button
-                variant="outline"
-                className="w-full border-[#004f9f] text-[#004f9f] hover:bg-[#004f9f] hover:text-white [font-family:'Brutal_Type-Regular',Helvetica] font-normal text-[13px]"
-              >
-                Зарегистрироваться
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </form>
       </div>
 
       <img
