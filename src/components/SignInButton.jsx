@@ -1,9 +1,9 @@
 import { Button } from "./ui/button";
 
 export const SignInButton = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const form = document.getElementById("login_form") as HTMLFormElement;
+    const form = document.getElementById("login_form");
     if (form) {
       form.submit();
     }

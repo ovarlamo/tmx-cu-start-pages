@@ -19,7 +19,7 @@ const bulletPoints = [
   },
 ];
 
-export const Frame = (): JSX.Element => {
+export const Frame = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-[#003d7a] to-[#001f3f] relative overflow-hidden">
       <img
