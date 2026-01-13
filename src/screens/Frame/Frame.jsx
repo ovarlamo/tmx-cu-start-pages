@@ -7,15 +7,15 @@ import "./Frame.css";
 
 const bulletPoints = [
   {
-    icon: "/group-3.png",
+    icon: "group-3.png",
     text: "возможность для профессионального и карьерного роста работников и руководителей машиностроительной отрасли",
   },
   {
-    icon: "/group-2.png",
+    icon: "group-2.png",
     text: "организация обучающих программ и тренингов, направленных на повышение квалификации и развитие навыков работников",
   },
   {
-    icon: "/group-1.png",
+    icon: "group-1.png",
     text: "подготовка и обучение потенциальных лидеров и специалистов высокого уровня",
   },
 ];
@@ -26,7 +26,7 @@ export const Frame = () => {
       <img
         className="frame-bg-image"
         alt="Background pattern"
-        src="/group.png"
+        src="group.png"
       />
 
       <div className="frame-content">
@@ -51,9 +51,7 @@ export const Frame = () => {
                   alt="Feature icon"
                   src={point.icon}
                 />
-                <p className="frame-bullet-text">
-                  {point.text}
-                </p>
+                <p className="frame-bullet-text">{point.text}</p>
               </div>
             ))}
           </div>
@@ -63,7 +61,7 @@ export const Frame = () => {
           <Card className="frame-card">
             <CardContent className="frame-card-content">
               <div className="frame-card-logo">
-                <img alt="TMX Logo" src="/group-4.png" />
+                <img alt="TMX Logo" src="group-4.png" />
               </div>
 
               <div className="frame-card-header">
@@ -76,20 +74,14 @@ export const Frame = () => {
 
               <div className="frame-card-fields">
                 <div className="frame-form-group">
-                  <Label
-                    htmlFor="login"
-                    className="frame-label"
-                  >
+                  <Label htmlFor="login" className="frame-label">
                     Логин
                   </Label>
                   <Input id="login" type="text" name="login" />
                 </div>
 
                 <div className="frame-form-group">
-                  <Label
-                    htmlFor="password"
-                    className="frame-label"
-                  >
+                  <Label htmlFor="password" className="frame-label">
                     Пароль
                   </Label>
                   <Input id="password" type="password" name="password" />
@@ -103,14 +95,9 @@ export const Frame = () => {
               <div className="frame-card-actions">
                 <SignInButton />
 
-                <div className="frame-divider">
-                  или
-                </div>
+                <div className="frame-divider">или</div>
 
-                <Button
-                  variant="outline"
-                  className="frame-register-button"
-                >
+                <Button variant="outline" className="frame-register-button">
                   Зарегистрироваться
                 </Button>
               </div>
